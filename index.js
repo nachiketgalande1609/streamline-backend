@@ -25,7 +25,7 @@ app.use(express.json());
 
 // mongoose.set("debug", true);
 
-mongoose.connect(process.env.MONGO_CONN_STRING_LOCAL);
+mongoose.connect(process.env.MONGO_CONN_STRING);
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
