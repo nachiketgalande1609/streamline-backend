@@ -13,7 +13,6 @@ const dashboardRoutes = require("./routes/dashboard.routes");
 const customerRoutes = require("./routes/customers.routes");
 const salesRoutes = require("./routes/sales.routes");
 const ticketRoutes = require("./routes/tickets.routes");
-const reconRoutes = require("./routes/recon.routes");
 const path = require("path");
 
 require("dotenv").config();
@@ -39,7 +38,6 @@ app.use("/api/customers", customerRoutes);
 app.use("/api/sales", salesRoutes);
 app.use("/api/sales", salesRoutes);
 app.use("/api/tickets", ticketRoutes);
-app.use("/api/recon", reconRoutes);
 
 app.listen(3001, () => {
     "Server Started";
